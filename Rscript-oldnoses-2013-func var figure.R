@@ -24,7 +24,7 @@ ust2013.graph = ggplot(ust2013, aes(x=Human_log, y=Ust_Ishim_log))+
   geom_point(aes(colour=OR)) +
   geom_smooth(method="lm", se= FALSE, col="black") +
   stat_cor(aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")),
-           method = "pearson", 
+           method = "pearson",
            p.accuracy = 0.001, r.accuracy = 0.01,
            label.x = -3, label.y = 3.5, size = 6) +
   stat_regline_equation(label.x = -3, label.y = 2.8, size = 6) +
@@ -40,7 +40,7 @@ den2013.graph = ggplot(den2013, aes(x=Human_log, y=Denisova_log))+
   geom_point(aes(colour = OR)) +
   geom_smooth(method="lm", se= FALSE, col="black") +
   stat_cor(aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")),
-           method = "pearson", 
+           method = "pearson",
            p.accuracy = 0.001, r.accuracy = 0.01,
            label.x = -3, label.y = 3.5, size = 6) +
   stat_regline_equation(label.x = -3, label.y = 2.8, size = 6) +
@@ -56,7 +56,7 @@ alt2013.graph = ggplot(alt2013, aes(x=Human_log, y=Altai_log))+
   geom_point(aes(colour = OR)) +
   geom_smooth(method="lm", se= FALSE, col="black") +
   stat_cor(aes(label = paste(..rr.label.., ..p.label.., sep = "~`,`~")),
-           method = "pearson", 
+           method = "pearson",
            p.accuracy = 0.001, r.accuracy = 0.01,
            label.x = -3, label.y = 3.5, size = 6) +
   stat_regline_equation(label.x = -3, label.y = 2.8, size = 6) +
@@ -70,7 +70,7 @@ alt2013.graph = ggplot(alt2013, aes(x=Human_log, y=Altai_log))+
 #ROW 2
 vcf2013long = read_excel("oldnoses-orfuncdata-2013-all.xlsx", sheet = "VCF2013-long")
 vcf2013long$OR = factor(vcf2013long$OR)
-vcf2013long$Lineage = ordered(vcf2013long$Lineage, 
+vcf2013long$Lineage = ordered(vcf2013long$Lineage,
   levels = c("Human", "Ust_Ishim", "Denisova", "Altai"))
 vcf2013long$Lineage <- gsub("Denisova", "Denisovan",vcf2013long$Lineage)
 vcf2013long$Response_log = log(vcf2013long$Response)
@@ -84,12 +84,12 @@ boxplot2013.graph1 = ggplot(vcf2013long, aes(x=Lineage, y=Response_log, fill=Lin
   scale_fill_brewer(palette="PuOr")+
   theme_pubr(base_size = 20, legend = "none")
 
-boxplot2013.graph <- boxplot2013.graph1 + 
+boxplot2013.graph <- boxplot2013.graph1 +
   theme(axis.text.x = element_text(angle = 45, vjust=1, hjust=1))
 
 #Panel E
 byOR2013.graph = ggplot(vcf2013long, aes(Response_log, Lineage)) +
-  geom_jitter(aes(col=OR)) + 
+  geom_jitter(aes(col=OR)) +
   geom_smooth(aes(col=OR), method="lm", se=F)+
   scale_color_viridis_d() +
   labs(x = "Response(ln) by OR",
@@ -99,9 +99,11 @@ byOR2013.graph = ggplot(vcf2013long, aes(Response_log, Lineage)) +
 
 #PLOT
 library(cowplot)
+tiff("Rscript-oldnoses-2016-func var figure.tiff", width = 20,
+     height=12, res=300, units="in",pointsize=12, type="cairo")
 row1 = plot_grid(alt2013.graph, den2013.graph, ust2013.graph,
   labels = c('a', 'b', 'd'),nrow=1)
 row2 = plot_grid(boxplot2013.graph, byOR2013.graph,
   labels = c('d', 'e'), nrow=1)
 plot_grid(row1, row2, nrow=2, rel_heights = c(1,1))
-
+dev.off()

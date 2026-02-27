@@ -1,6 +1,6 @@
 options(width = 250)
 options(max.print = .Machine$integer.max)
-library(dplyr); library(Biostrings)
+library(tidyverse); library(Biostrings)
 
 or1a1.dna = readDNAStringSet("or1a1-dna.fas")
 or1c1.dna = readDNAStringSet("or1c1-dna.fas")
