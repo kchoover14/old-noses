@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Genetic and functional odorant receptor variation in the *Homo* lineage
 
 Using ancient DNA from three Neanderthal genomes, one Denisovan, and one ancient human (Ust'-Ishim), this project examines whether extinct members of the genus *Homo* had functionally distinct olfactory repertoires compared to contemporary humans. Novel variants were identified in 30 odorant receptor (OR) genes with known human receptor-odor relationships, then physically reconstructed using chimeric PCR and tested in luciferase cell assays -- the first experimental validation of OR function in ancient hominins at this scale. Extinct lineages showed more conserved OR sequences than living humans, but functional differences were in sensitivity rather than the range of odors detected: Neanderthal variants generally reduced OR sensitivity, while Denisovan variants increased sensitivity to sweet and sulfurous odors, suggesting possible ecological tuning to energy-dense foods following dispersal from Africa.
@@ -11,15 +10,18 @@ de March, C.A., Matsunami, H., Abe, M., Cobb, M., & Hoover, K.C. (2023). Genetic
 
 This repo contains two sets of files. All files prefixed `revised-` are revised scripts and figures from the original publication. Revisions offer a fully reproducible end-to-end pipeline from raw data through ETL to results — including, **when needed**, data cleaning and wrangling scripts (revised from originals or created where none existed), code modernization, and the addition of environment management to future-proof the revised scripts. All other files are associated with the original publication. Occasionally, an original script may be updated with annotations for clarity; the commit history will note any such changes.
 
+- **Original files:** `HCscript-scrape_ancient_VCF_data_from_server.txt`, DNA FASTA files (`or*-dna.fas`), amino acid FASTA files (`or*-aa.fas`, `or*-aa-all.fa`), original R scripts, functional assay data
+- **Revised files:** `revised-old-noses.R`, `revised-fig1.png`, `revised-fig2.png`, `revised-fig3.png`, `revised-fig4.png`
+
 ## Portfolio Page
 
 The [portfolio page](https://kchoover14.github.io/old-noses) includes a full project narrative, key findings, and figures.
 
 ## Tools & Technologies
 
-**Languages:** R
+**Languages:** R | Bash
 
-**Tools:** VCFtools | BCFtools | GraphPad Prism 9
+**Tools:** VCFtools | BCFtools | HPC (University of Alaska Fairbanks) | GraphPad Prism 9
 
 **Packages:** dplyr | tidyr | ggplot2 | readxl | Biostrings | ape | seqinr | phylogram | dendextend | gdsfmt | SNPRelate | fitdistrplus | car | cowplot | viridis | naniar
 
@@ -31,8 +33,3 @@ Demonstrates integration of computational genomics and experimental biology to t
 
 - Code and scripts are licensed under the [MIT License](LICENSE).
 - Data, figures, and written content © Kara C. Hoover, licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
-=======
-# OldNoses
-This repository contain the R code for analysis, sequence data (amino acids and DNA), protein models, and functional expression raw data for "Genetic and functional odorant receptor variation in the Homo lineage". Preprint: https://www.biorxiv.org/content/10.1101/2021.09.13.460146v2
-
->>>>>>> 8617044554c709028b52c026e65c6933c38525e1
