@@ -8,10 +8,10 @@ de March, C.A., Matsunami, H., Abe, M., Cobb, M., & Hoover, K.C. (2023). Genetic
 
 ## Repository Contents
 
-This repo contains two sets of files. All files prefixed `revised-` are revised scripts and figures from the original publication. Revisions offer a fully reproducible end-to-end pipeline from raw data through ETL to results — including, **when needed**, data cleaning and wrangling scripts (revised from originals or created where none existed), code modernization, and the addition of environment management to future-proof the revised scripts. All other files are associated with the original publication. Occasionally, an original script may be updated with annotations for clarity; the commit history will note any such changes.
+This repo contains two sets of files. All files prefixed `revised-` are revised scripts and figures from the original publication. Revisions consolidate original scripts (which contained functions that have deprecated or, in the case of Biostrings, moved to different librariers within Biostrings) and include environment management to future-proof the revised scripts. All other files are associated with the original publication. Occasionally, an original script may be updated with annotations for clarity; the commit history will note any such changes. In this case, the fastas are updated so that the names match the scripts.
 
 - **Original files:** `HCscript-scrape_ancient_VCF_data_from_server.txt`, DNA FASTA files (`or*-dna.fas`), amino acid FASTA files (`or*-aa.fas`, `or*-aa-all.fa`), original R scripts, functional assay data
-- **Revised files:** `revised-old-noses.R`, `revised-fig1.png`, `revised-fig2.png`, `revised-fig3.png`, `revised-fig4.png`
+- **Revised files:** All revisions are prefixed, `revised-`
 
 ## Portfolio Page
 
@@ -21,9 +21,9 @@ The [portfolio page](https://kchoover14.github.io/old-noses) includes a full pro
 
 **Languages:** R | Bash
 
-**Tools:** VCFtools | BCFtools | HPC (University of Alaska Fairbanks) | GraphPad Prism 9
+**Tools:** VCFtools | BCFtools | HPC (University of Alaska Fairbanks)
 
-**Packages:** dplyr | tidyr | ggplot2 | readxl | Biostrings | ape | seqinr | phylogram | dendextend | gdsfmt | SNPRelate | fitdistrplus | car | cowplot | viridis | naniar
+**Packages:** dplyr | tidyr | ggplot2 | readxl | Biostrings | pwalign | ape | seqinr | phylogram | viridis | ggpubr
 
 ## Expertise
 
@@ -31,5 +31,5 @@ Demonstrates integration of computational genomics and experimental biology to t
 
 ## License
 
-- Code and scripts are licensed under the [MIT License](LICENSE).
-- Data, figures, and written content © Kara C. Hoover, licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+- Code and scripts © Kara C. Hoover, licensed under the [MIT License](LICENSE).
+- Data, figures (except homology model and odorant activity table), and written content © Kara C. Hoover, licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).

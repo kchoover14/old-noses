@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kara C. Hoover">
+
+<title>Genetic and functional odorant receptor variation in the Homo lineage</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="old-noses_files/libs/clipboard/clipboard.min.js"></script>
+<script src="old-noses_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="old-noses_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="old-noses_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="old-noses_files/libs/quarto-html/popper.min.js"></script>
+<script src="old-noses_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="old-noses_files/libs/quarto-html/anchor.min.js"></script>
+<link href="old-noses_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="old-noses_files/libs/quarto-html/quarto-syntax-highlighting-076ecbd647e1f0418c5051713cd9b730.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="old-noses_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="old-noses_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="old-noses_files/libs/bootstrap/bootstrap-547e859215a1047392d8d450828ef99e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="eggplant quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link active" data-scroll-target="#executive-summary">Executive Summary</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a></li>
+  <li><a href="#research-answers" id="toc-research-answers" class="nav-link" data-scroll-target="#research-answers">Research Answers</a>
+  <ul class="collapse">
+  <li><a href="#or-variation-across-the-homo-lineage" id="toc-or-variation-across-the-homo-lineage" class="nav-link" data-scroll-target="#or-variation-across-the-homo-lineage">OR variation across the <em>Homo</em> lineage</a></li>
+  <li><a href="#phylogenetic-relationships-across-homo" id="toc-phylogenetic-relationships-across-homo" class="nav-link" data-scroll-target="#phylogenetic-relationships-across-homo">Phylogenetic relationships across <em>Homo</em></a></li>
+  <li><a href="#functional-testing-sensitivity-differs-more-than-specificity" id="toc-functional-testing-sensitivity-differs-more-than-specificity" class="nav-link" data-scroll-target="#functional-testing-sensitivity-differs-more-than-specificity">Functional testing: sensitivity differs more than specificity</a></li>
+  <li><a href="#structural-basis-of-functional-differences" id="toc-structural-basis-of-functional-differences" class="nav-link" data-scroll-target="#structural-basis-of-functional-differences">Structural basis of functional differences</a></li>
+  <li><a href="#or-activity-index-across-lineages-and-odor-classes" id="toc-or-activity-index-across-lineages-and-odor-classes" class="nav-link" data-scroll-target="#or-activity-index-across-lineages-and-odor-classes">OR activity index across lineages and odor classes</a></li>
+  </ul></li>
+  <li><a href="#study-design" id="toc-study-design" class="nav-link" data-scroll-target="#study-design">Study Design</a></li>
+  <li><a href="#project-resources" id="toc-project-resources" class="nav-link" data-scroll-target="#project-resources">Project Resources</a></li>
+  <li><a href="#tools-technologies" id="toc-tools-technologies" class="nav-link" data-scroll-target="#tools-technologies">Tools &amp; Technologies</a></li>
+  <li><a href="#expertise" id="toc-expertise" class="nav-link" data-scroll-target="#expertise">Expertise</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Genetic and functional odorant receptor variation in the <em>Homo</em> lineage</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">olfaction</div>
+    <div class="quarto-category">odorant receptors</div>
+    <div class="quarto-category">human evolution</div>
+    <div class="quarto-category">paleogenomics</div>
+    <div class="quarto-category">functional genetics</div>
+    <div class="quarto-category">regression</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kara C. Hoover </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="executive-summary" class="level2">
+<h2 class="anchored" data-anchor-id="executive-summary">Executive Summary</h2>
+<p><strong>Problem:</strong> Did Neanderthals and Denisovans smell the world differently than we do? There is evidence to suggest there are differences between humans and other apes in terms of olfactory genetics, and there is variation across living human populations that is potentially linked, in some instances, to dietary niche and habitat. Traditional approaches to inferring gene function in extinct species rely on computational methods alone – leaving the actual functional question unanswered.</p>
+<p><strong>Approach:</strong> We took a transformative approach combining ancient DNA analysis with experimental biology to directly test OR function across the <em>Homo</em> lineage. Using paleogenomic sequence data from three Neanderthal genomes (Altai, Chagyrskaya, Vindija), one Denisovan, and one ancient human (Ust’-Ishim), we identified novel variants in 30 OR genes with known human receptor-odor relationships. We then physically reconstructed the ancient OR proteins using chimeric PCR and measured their functional responses to odorants in luciferase cell assays – the first experimental validation of gene function in ancient hominins at this scale.</p>
+<p><strong>Insights:</strong> Extinct lineages had highly conserved OR sequences compared to contemporary humans, but OR function differed more in sensitivity than in specificity. Neanderthal variants generally disrupted OR function, reducing sensitivity to green, floral, and spicy odors. Denisovan variants increased sensitivity, particularly to sweet (vanilla, honey-like) and sulfurous odors – up to four times greater than in contemporary humans. Most OR variation was shared across the genus <em>Homo</em> before global dispersal, suggesting a largely shared olfactory world with lineage-specific tuning following migrations from Africa.</p>
+<p><strong>Significance:</strong> This work establishes the first broad experimental framework for testing functional evolutionary adaptation in extinct species using reconstructed proteins. The finding that our genus shares a conserved olfactory repertoire – with functional differences in sensitivity rather than the range of odors detected – has implications for understanding how olfaction shaped dietary adaptation, ecological niche expansion, and the success of <em>Homo</em> as a globally distributed genus.</p>
+<p><strong>Key Findings</strong></p>
+<ul>
+<li>Neanderthal and Denisovan OR sequences varied less than contemporary human ORs, but the genus shares a broadly overlapping olfactory repertoire</li>
+<li>OR variants in extinct lineages altered sensitivity more than specificity – Neanderthals were less sensitive, Denisovans more sensitive to several odor classes</li>
+<li>Denisovans showed markedly increased sensitivity to sweet and sulfurous odors (vanillin response 10x human; octanethiol 4x human), suggesting possible ecological tuning to energy-dense foods</li>
+<li>Extinct lineages clustered together and closest to living East Asian populations, consistent with known introgression signatures</li>
+<li>Contemporary humans show greater OR genetic diversity than extinct lineages, consistent with relaxed selection and broad ecological adaptation following African dispersal</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>de March, C.A., Matsunami, H., Abe, M., Cobb, M., &amp; Hoover, K.C. (2023). Genetic and functional odorant receptor variation in the <em>Homo</em> lineage. <em>iScience</em>, 26(1), 105908. DOI: <a href="https://doi.org/10.1016/j.isci.2022.105908">10.1016/j.isci.2022.105908</a></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research Question</h2>
+<p>Do novel variants in the paleogenomes of Neanderthals and Denisovans result in functionally distinct olfactory repertoires compared to contemporary humans?</p>
+<p>Evolutionary context: The human genus <em>Homo</em> underwent the most radical ecological niche expansion of all primates when migrating out of Africa and adapting to diverse global environments. Denisovans and Neanderthals ancestors dispersed from Africa earlier than contemporary humans (~750,000 versus 65,000 years ago) and separated from each other ~300,000 years ago.</p>
+<p><strong>Figure 1. Phylogenetic tree of Hominids.</strong></p>
+<p><img src="revised-phylotree.png" class="img-fluid"></p>
+</section>
+<section id="research-answers" class="level2">
+<h2 class="anchored" data-anchor-id="research-answers">Research Answers</h2>
+<section id="or-variation-across-the-homo-lineage" class="level3">
+<h3 class="anchored" data-anchor-id="or-variation-across-the-homo-lineage">OR variation across the <em>Homo</em> lineage</h3>
+<p>Contemporary humans show substantially more OR genetic variation than extinct lineages. Nucleotide variants in extinct lineages averaged 0.11% across all 30 genes sampled, compared to 0.82% in the 1000 Genomes dataset. The fixation index (Fst) comparing 1000 Genomes populations to ancient samples averaged 11% – above the 4% mean seen within 1000 Genomes populations alone – indicating meaningful structural differentiation between living and extinct lineages that reflects both genetic drift and conservation.</p>
+<p><strong>Figure 2. Percent OR variation by gene and population for DNA variants (left) and amino acid variants (right).</strong></p>
+<p><img src="revised-heatmap.png" class="img-fluid"></p>
+<p><strong>Interpretation:</strong> Ancient samples (far left columns) show markedly lower variation than any living population across nearly all 30 genes. The pattern is consistent across both DNA and protein levels. A small number of genes show elevated variation in specific ancient lineages, corresponding to the novel variants subjected to functional testing.</p>
+</section>
+<section id="phylogenetic-relationships-across-homo" class="level3">
+<h3 class="anchored" data-anchor-id="phylogenetic-relationships-across-homo">Phylogenetic relationships across <em>Homo</em></h3>
+<p>Concatenated amino acid sequences for the 30 sampled ORs place extinct lineages in a clade closest to living East Asian and South Asian populations – groups that carry known introgression signatures from both Neanderthals and Denisovans. Vindija Neanderthal was the most phylogenetically distinct of the three Neanderthal samples, an unexpected finding given that genome-wide studies have placed Vindija closest to Chagyrskaya.</p>
+<p><strong>Figure 3. Cladogram based on full amino acid sequences for 30 odorant receptos in ancient lineages and 1000 Genomes populations.</strong></p>
+<p><img src="revised-cladogram.png" class="img-fluid"> <strong>Interpretation:</strong> Based on the odorant receptors in this study, Neadertals and Denisova were closest to the extinct human Ust’-Ishim, suggesting a more recent expansion of the ORs studied.</p>
+</section>
+<section id="functional-testing-sensitivity-differs-more-than-specificity" class="level3">
+<h3 class="anchored" data-anchor-id="functional-testing-sensitivity-differs-more-than-specificity">Functional testing: sensitivity differs more than specificity</h3>
+<p>Of the 11 genes containing 14 novel variants subjected to functional testing, five ORs were functionally different from contemporary humans (OR1C1, OR2C1, OR5P3, OR10G3, OR10J5), one was the same (OR1A1), and two had no identifiable ligands in our panel (OR2B11, OR6P1). The primary finding is that novel variants altered dose-response sensitivity rather than the range of odors detected – extinct hominins likely smelled the same odors we do, but at different thresholds.</p>
+<p><strong>Figure 4. Regression results for OR dose responses comparing human and extinct lineage ORs.</strong></p>
+<p><img src="revised-funcvar.png" class="img-fluid"></p>
+<p><strong>Interpretation:</strong> Panels A and B show the correlation between human and Neanderthal (A) and Denisovan (B) OR responses. Neanderthal responses are uncorrelated with human responses (R² = 0.05), while Denisovan responses are strongly correlated (R² = 0.87) but with higher overall sensitivity. Panels C and D show response distributions by lineage and by individual OR gene. Denisovan ORs show consistently higher responses than human equivalents; Neanderthal ORs cluster below human responses.</p>
+</section>
+<section id="structural-basis-of-functional-differences" class="level3">
+<h3 class="anchored" data-anchor-id="structural-basis-of-functional-differences">Structural basis of functional differences</h3>
+<p>Novel variants were mapped onto a homology model of the human consensus OR to understand their structural context. Variants in conserved functional regions (such as the MAY³·⁴⁸DRY motif in Chagyrskaya Neanderthal OR1C1) disrupted OR activation. Denisovan variants in OR10G3 and OR2C1 were located near or within the ligand binding cavity, likely explaining their increased sensitivity to vanillin and octanethiol respectively.</p>
+<p><strong>Figure 5. Homology model of the human consensus odorant receptor with variant locations and dose-response panels for functionally tested ORs.</strong></p>
+<p><img src="fig-homology%20model.png" class="img-fluid"></p>
+<p><strong>Interpretation:</strong> Each colored ring on the transmembrane model marks the location of a novel variant, color-coded by lineage (orange = human, blue = Denisovan, light purple = Vindija Neanderthal, dark purple = Chagyrskaya Neanderthal). Dose-response panels show OR activation (luciferase/renilla ratio) across seven odorant concentrations. Statistical significance between human and ancient lineage versions is shown (*** p&lt;0.001, ** p&lt;0.01, * p&lt;0.05, ns = non-significant). Variants near conserved activation residues tend to reduce function; variants near the binding cavity tend to increase sensitivity.</p>
+</section>
+<section id="or-activity-index-across-lineages-and-odor-classes" class="level3">
+<h3 class="anchored" data-anchor-id="or-activity-index-across-lineages-and-odor-classes">OR activity index across lineages and odor classes</h3>
+<p>Comparing OR activity index values – which combine potency and efficacy – across lineages and odor categories reveals the directional pattern of functional differences. Denisovan ORs were most responsive to balsamic and sweet odors (vanillin: 10.28 vs.&nbsp;3.57 human; allyl phenyl acetate: 13.87 vs.&nbsp;13.12 human) and sulfurous odors (octanethiol: 4.65 vs.&nbsp;0.94 human). Neanderthal OR1C1 showed a weak response to androstadienone and OR5P3 showed no response to odors that produced strong human responses.</p>
+<p><strong>Figure 6. OR activity index comparison across human and extinct lineages by odorant.</strong></p>
+<p><img src="fig-activity%20table.png" class="img-fluid"></p>
+<p><strong>Interpretation:</strong> Color coding from low (purple) to high (mustard) highlights the elevated Denisovan responses to balsamic, sweet, and sulfurous odor classes relative to contemporary humans. The Denisovan heightened sensitivity to sweet odors may reflect evolutionary tuning to energy-dense foods – honey and vanilla-associated compounds are among the strongest responses. Neanderthal activity indexes are generally lower than human equivalents across tested odors, consistent with the reduced functional sensitivity seen in the regression analysis.</p>
+<hr>
+</section>
+</section>
+<section id="study-design" class="level2">
+<h2 class="anchored" data-anchor-id="study-design">Study Design</h2>
+<p><strong>Data Source:</strong> Paleogenomic sequence data from the Max Planck Institute for Evolutionary Anthropology Leipzig – 2013 and 2016 VCF datasets covering three Neanderthal genomes (Altai, Chagyrskaya, Vindija), one Denisovan (Denisovan 3), and one ancient human (Ust’-Ishim). Contemporary human data from the 1000 Genomes Project (Phase 3), comprising 2,500+ individuals across 26 populations. All ancient genomes used hg19/GRCh37 as the reference. Ancient samples were restricted to Max Planck-generated data to minimize noise from different variant-calling methods and damaged DNA handling approaches.</p>
+<p><strong>Data Handling:</strong> Analysis focused on 30 OR genes with known human receptor-odor relationships and well-established agonist responses. Gene regions were trimmed to protein-coding sequence only. Only variants with minimum genotype quality GQ20 were used. Insertions and deletions were excluded. For 1000 Genomes, consensus sequences were generated for each of the 26 population groups to allow comparison with individual-level ancient samples. Variants shared with 1000 Genomes were distinguished from novel ancient variants using a hash function against the 1000 Genomes variant data.</p>
+<p><strong>Analytical Approach:</strong></p>
+<ol type="1">
+<li>Sliced ancient genome VCFs by chromosomal coordinates for each of the 30 OR genes using VCFtools on the University of Alaska Fairbanks HPC (<code>HCscript-scrape_ancient_VCF_data_from_server.txt</code>); repeated for each ancient sample (Altai, Chagyrskaya, Vindija, Denisovan, Ust’-Ishim); output VCFs were used to generate per-gene DNA and amino acid FASTA sequence files</li>
+<li>Identified DNA and amino acid variants relative to the human reference using pairwise alignment in Biostrings; called novel variants not present in 1000 Genomes using a hash function against the 1000 Genomes VCF data</li>
+<li>Calculated percent OR variation per gene per population (variant count / gene basepairs) for DNA and amino acid levels; calculated Fst using gdsfmt and SNPRelate</li>
+<li>Inferred phylogenetic relationships across populations using concatenated amino acid sequences for all 30 genes; constructed neighbor-joining tree using ape, seqinr, and phylogram</li>
+<li>Reconstructed ancient OR proteins using chimeric PCR with site-directed mutagenesis; screened against seven odorants per OR in Hana3A cells using a luciferase reporter assay</li>
+<li>Conducted dose-response assays for top screening responses across seven odorant concentrations; computed Activity Index (|logEC50| x efficacy) per OR/odorant pair</li>
+<li>Assessed cell surface expression of reconstructed ORs by flow cytometry to confirm protein trafficking to cell surface</li>
+<li>Built homology model of human consensus OR from alignment of 391 human OR sequences against four GPCR crystal structures; mapped novel variant locations onto model</li>
+</ol>
+<hr>
+</section>
+<section id="project-resources" class="level2">
+<h2 class="anchored" data-anchor-id="project-resources">Project Resources</h2>
+<p><strong>Repository:</strong> <a href="https://github.com/kchoover14/old-noses">old-noses</a></p>
+<p><strong>Data:</strong> Functional assay data (raw and analyzed) for 2013 and 2016 VCF datasets available via figshare: <a href="https://doi.org/10.6084/m9.figshare.21542943">10.6084/m9.figshare.21542943</a>. <em>Note:</em> Paleogenomic sequence data from Max Planck Institute for Evolutionary Anthropology (2013 and 2016 VCFs). Contemporary human data from <a href="https://www.internationalgenome.org/">1000 Genomes Project Phase 3</a>.</p>
+<p><strong>Code:</strong></p>
+<ul>
+<li><code>HCscript-scrape_ancient_VCF_data_from_server.txt</code> – HPC script (VCFtools) to slice ancient genome VCFs by chromosomal coordinates for each OR gene and ancient sample; upstream step producing FASTA input files for R pipeline</li>
+<li><code>revised-dna.R</code>, <code>revised-aa.R</code>,<code>revised-figures.R</code>– consolidates original analysis into three scripts</li>
+</ul>
+<p><strong>Project Artifacts:</strong></p>
+<ul>
+<li>DNA FASTA files (n=30): per-gene sequence files for all samples in <code>fastas-dna/</code> (<code>OR[GENE]-all with humref.fa</code>); cleaned version generated via script</li>
+<li>Amino acid FASTA files (n=30): per-gene sequence files for all samples in <code>fastas-aa/</code> (<code>or[gene]-aa-all with humref.fa</code>); cleaned version generated via script</li>
+<li>Figures (n=5): available via figshare as well: <a href="https://doi.org/10.6084/m9.figshare.21542943">10.6084/m9.figshare.21542943</a></li>
+</ul>
+<p><strong>Environment:</strong></p>
+<ul>
+<li><code>renv.lock</code> and <code>renv/</code> – restore with <code>renv::restore()</code></li>
+</ul>
+<p><strong>License:</strong></p>
+<ul>
+<li>Code and scripts © Kara C. Hoover, licensed under the <a href="LICENSE">MIT License</a>.</li>
+<li>Data, figures (except homology model and odorant activity table), and written content © Kara C. Hoover, licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>.</li>
+</ul>
+<hr>
+</section>
+<section id="tools-technologies" class="level2">
+<h2 class="anchored" data-anchor-id="tools-technologies">Tools &amp; Technologies</h2>
+<p><strong>Languages:</strong> R | Bash</p>
+<p><strong>Tools:</strong> VCFtools | BCFtools | HPC (University of Alaska Fairbanks)</p>
+<p><strong>Packages:</strong> dplyr | tidyr | ggplot2 | readxl | Biostrings | pwalign | ape | seqinr | phylogram | viridis | ggpubr</p>
+<hr>
+</section>
+<section id="expertise" class="level2">
+<h2 class="anchored" data-anchor-id="expertise">Expertise</h2>
+<p><strong>Domain Expertise:</strong> paleogenomics | olfactory science | human evolutionary genetics | population genetics</p>
+<p><strong>Transferable Expertise:</strong> Demonstrates end-to-end integration of computational genomics and experimental biology to answer evolutionary questions – a methodological framework applicable to any study testing functional hypotheses about genetic variation in extinct or non-model species.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
